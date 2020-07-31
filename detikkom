@@ -3,3 +3,6 @@ from bs4 import BeautifulSoup
 
 page = requests.get("https://www.detik.com/terpopuler", params={"tag_from":"wp_cb_mostPopular_more"})
 print(page)
+
+soup = BeautifulSoup(page.text,"html.parser")
+print(soup.prettify())
