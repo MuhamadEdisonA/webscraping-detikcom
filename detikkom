@@ -20,3 +20,6 @@ for tittle in tittles:
 #for image
 images = soup.find_all(class_="media__image")
 print(images)
+
+for image in images:
+    print(image.prettify())
