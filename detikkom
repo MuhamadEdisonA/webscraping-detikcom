@@ -6,3 +6,6 @@ print(page)
 
 soup = BeautifulSoup(page.text,"html.parser")
 print(soup.prettify())
+
+content = soup.find_all(class_="grid-row list-content")
+print(content)
