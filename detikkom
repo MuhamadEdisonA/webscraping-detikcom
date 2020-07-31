@@ -12,3 +12,6 @@ print(content)
 
 tittles = soup.find_all(class_="media__title")
 print(tittles)
+
+for tittle in tittles:
+    print(tittle.text)
