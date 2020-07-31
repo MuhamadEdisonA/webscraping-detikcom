@@ -15,3 +15,8 @@ print(tittles)
 
 for tittle in tittles:
     print(tittle.text)
+
+
+#for image
+images = soup.find_all(class_="media__image")
+print(images)
