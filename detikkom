@@ -9,3 +9,6 @@ print(soup.prettify())
 
 content = soup.find_all(class_="grid-row list-content")
 print(content)
+
+tittles = soup.find_all(class_="media__title")
+print(tittles)
